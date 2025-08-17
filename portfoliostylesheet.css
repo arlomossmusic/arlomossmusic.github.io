@@ -1,0 +1,467 @@
+
+/* FONTS */
+
+@font-face {
+    font-family: daniel;
+    src: url(fonts/danielfont/daniel.ttf);
+}
+.daniel {
+    font-family: daniel;
+    font-size: 100%;
+}
+@font-face {
+    font-family: medio;
+    src: url(fonts/medio.otf);
+}
+.medio {
+    font-family:medio;
+    font-size: 100%;
+}
+@font-face {
+    font-family:mechanical;
+    src: url(fonts/mechanical-font/);
+}
+.meccy {
+    font-family:mechanical;
+    font-size:100%;
+}
+
+/* COLOURS
+
+--text: #0c0a08;
+--background: #fbf5f0;
+--primary: #9d7d63;
+--secondary: #c6c5a4;
+--accent: #b0b78c;
+
+*/
+:root {
+    --text: #0c0a08;
+        /* svg->  filter: invert(3%) sepia(29%) saturate(444%) hue-rotate(350deg) brightness(102%) contrast(98%);  */
+    --background: #fbf5f0;
+        /* svg->  filter: invert(94%) sepia(4%) saturate(616%) hue-rotate(325deg) brightness(105%) contrast(97%);  */
+    --primary: #9d7d63;
+        /* svg->  filter: invert(53%) sepia(6%) saturate(1952%) hue-rotate(345deg) brightness(95%) contrast(84%);  */
+    --secondary: #c6c5a4;
+        /* svg->  filter: invert(90%) sepia(24%) saturate(264%) hue-rotate(14deg) brightness(85%) contrast(86%);  */
+    --accent: #b0b78c; 
+        /* svg->  filter: invert(78%) sepia(9%) saturate(827%) hue-rotate(30deg) brightness(91%) contrast(89%);  */
+}
+
+
+
+/* IDS */
+
+#navbar {
+    background-color: var(--primary);
+    color: var(--primary);
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: 0.8s;
+}
+
+
+
+
+/* CLASSES */
+
+body {
+    background-color:var(--background);
+    --navbar-height: 55px;
+    padding-top: 0px;
+    margin: 0px;
+}
+p {
+    font-family: medio;
+    font-size: 100%;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+    /* NAV stuff */
+.navbar {
+    width:100%;
+    height: var(--navbar-height);
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--background); 
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+.nav {
+    color:var(--background);
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.linknav {
+    color:var(--text);
+    text-decoration: none;
+    font-weight: bold;
+}
+.navwrap a.nav:hover {
+    background-color: var(--text);
+    opacity:100%;
+    padding-bottom: 1.3em;
+    margin:0px;
+}
+.navwrap {
+    background-color: var(--primary);
+    margin-left: auto;
+    margin-right: 15px;
+    text-size-adjust: 100;
+}
+.logo {
+    background-color: var(--primary);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+.logocolor {
+    filter: invert(94%) sepia(4%) saturate(616%) hue-rotate(325deg) brightness(105%) contrast(97%);
+    background-color: var(--background);
+}
+.navpadding {
+    margin-top:75px;
+}
+
+/* PRIMARY FORMATTING */
+
+.imagebox {
+    background-color: var(--secondary);
+    padding: 2em;
+}
+.videobox {
+    background-color: var(--background);
+    padding: 2em;
+}
+.contentbox {
+    background-color: var(--background);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.justify-right {
+    text-align: right;
+}
+.align-left {
+    text-align: left;
+}
+.timelinecol {
+    display: table-cell;
+    border: 1px solid #f00;
+}
+.timelinetext span {
+    display: block;
+    height: 50%;
+}
+.timelinetext {
+    font-style: italic;
+    text-align:right;
+    font-size: 10pt;
+}
+.timelinetext span.start {
+    display: flex;
+    align-items: flex-start;
+    width: 60px;
+    overflow-wrap:normal;
+    text-align: right;
+}
+.timelinetext span.end {
+    display: flex;
+    align-items: flex-end;
+    width: 60px;
+    overflow-wrap:normal;
+    text-align: right;
+}
+.timelinetext span.shortstart {
+    display: flex;
+    align-items: flex-start;
+    width: 30px;
+    overflow-wrap:normal;
+    text-align: right;
+    margin-left: 2.25em;
+}
+.timelinetext span.shortend {
+    display: flex;
+    align-items: flex-end;
+    width: 30px;
+    overflow-wrap:normal;
+    text-align: right;
+    margin-left: 2.25em;
+}
+.projectbox {
+    background-color: var(--background);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+.projecttext {
+    border-left: 0.13em solid var(--primary);
+    padding-left: 1em;
+    margin-left: 4em;
+    margin-top: -2em;
+    margin-bottom: -3em;
+}
+
+/* HEADINGS AND TEXT */
+
+.head2 {
+    text-align: center;
+    font-family: medio;
+}
+.eptitle {
+    font-family: daniel;
+    font-size: 175%;
+    font-weight: bolder;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.listenbutton {
+    background-color:var(--primary);
+    color: var(--background);
+    font-family: medio;
+    font-size: 20px;
+    word-spacing: 0.15em;
+    line-height: 1.5em;
+    text-align: center;
+}
+.biography {
+    background-color:var(--background);
+    font-family: medio;
+    padding-top:1em;
+    font-size: 17px;
+    word-spacing: 0.15em;
+    line-height: 1.75em;
+    max-width: 100%;
+    align-content: center;
+}
+
+/* MAIN */
+.releasebox {
+    background-color: var(--background);
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 5%;
+}
+.releasewrapper {
+    background-color:var(--primary);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+.videowrapper {
+    background-color: var(--primary);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video {
+    aspect-ratio: 16/9;
+    width: 100%;
+    max-height: 100%;
+}
+
+.middle {
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+    align-content: center;
+}
+.table-formatting .button:hover {
+    background-color:var(--primary);
+    opacity:100%;
+    margin:0px;
+}
+.table-formatting {
+    background-color:var(--primary);
+    padding:10px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
+    table-layout: fixed;
+    text-align: center;
+}
+.discsongs {
+    font-family: medio;
+    font-size: 11pt;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+/* IMAGES */
+
+.ep-image {
+    width: 100%;
+}
+.bioimage {
+    width: 100%;
+}
+
+
+/* BIO SPECS */
+
+.biocol {
+    display: table-cell;
+    width: calc(100% / 2);
+    padding: 2%;
+    vertical-align: top;
+
+}
+.col-container {
+    background-color: var(--background);
+    opacity: 100%;
+    display: table;
+    width: 100%;
+}
+.col {
+    display: table-cell;
+    width: calc(100% / 3);
+    padding: 1%;
+}
+.gigvid {
+    background-color: var(--background);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+}
+.vidwrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.vidwrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.textwrap {
+    background-color: var(--background);
+    height: 2em;
+    width: 100%;
+    text-align:center;
+}
+
+/* PHOTOS */
+
+.presswrap {
+    width: 100%;
+}
+.epwrap {
+    width: 100%;
+}
+
+.photo {
+    max-width: 100%;
+    vertical-align: top;
+    margin-top: 4.5%;
+}
+.mainphoto {
+    max-width: 100%;
+}
+.formwrap {
+    background-color: var(--background);
+    top: 375px;
+    left: 220px;
+    min-width: 10em;
+    min-height: 10em;
+    position: absolute;
+    overflow: hidden;
+}
+.buttonbox {
+    background-color: var(--background);
+    padding: 0.3em;
+    opacity: 100%;
+}
+.buttonbox a.linknav:hover {
+    background-color: var(--accent);
+    opacity:100%;
+    padding: 0.3em;
+    margin:0px;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color:var(--secondary);
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+.iconcolor {
+    filter: invert(53%) sepia(6%) saturate(1952%) hue-rotate(345deg) brightness(95%) contrast(84%);
+    background-color:var(--primary);
+    padding: 10px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    border:0px;
+    padding-top:15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-spacing: 15px;
+}
+
+/*
+
+--text: #110902;
+--background: #fbf5f0;
+--primary: #a58268;
+--secondary: #c1c6b4;
+--accent: #a4ab93;
+
+--text: #070605;
+--background: #fbf5f0;
+--primary: #9d7d63;
+--secondary: #c3c5b4;
+--accent: #aab28d;
+
+--text: #0c0a08;
+--background: #fbf5f0;
+--primary: #9d7d63;
+--secondary: #c6c5a4;
+--accent: #b0b78c;
+
+--text: #0e0802;
+--background: #fcf5ef;
+--primary: #775233;
+--secondary: #ccb29d;
+--accent: #8da88f;
+
+--text: #0b0c07;
+--background: #f7f8f4;
+--primary: #9eae65;
+--secondary: #abc8a4;
+--accent: #8bb686;
+
+
+
+
+
+
+*/

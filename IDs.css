@@ -1,0 +1,11 @@
+#navbar {
+  background-color: rgb(115, 70, 33); /* background */
+  color: rgb(115, 70, 33);
+  text-align: right; /* Centered text */
+  font-size: 25px; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0px;
+  width: 100%; /* Full width */
+  transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}

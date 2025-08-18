@@ -46,6 +46,7 @@
         /* svg->  filter: invert(90%) sepia(24%) saturate(264%) hue-rotate(14deg) brightness(85%) contrast(86%);  */
     --accent: #b0b78c; 
         /* svg->  filter: invert(78%) sepia(9%) saturate(827%) hue-rotate(30deg) brightness(91%) contrast(89%);  */
+    --accent2: #685241;
 }
 
 
@@ -110,7 +111,7 @@ p {
     font-weight: bold;
 }
 .navwrap a.nav:hover {
-    background-color: var(--text);
+    background-color: var(--accent2);
     opacity:100%;
     padding-bottom: 1.3em;
     margin:0px;
